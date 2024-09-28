@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B90BD3E2CA7E1BE00753B19 /* NotificationBubleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90BD3D2CA7E1BE00753B19 /* NotificationBubleView.swift */; };
 		6BA450C82CA7D86900CD4BAF /* reel_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6BA450982CA7D86900CD4BAF /* reel_1.mp4 */; };
 		6BA450C92CA7D86900CD4BAF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA4509A2CA7D86900CD4BAF /* SearchView.swift */; };
 		6BA450CA2CA7D86900CD4BAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA4509B2CA7D86900CD4BAF /* ProfileView.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B90BD3D2CA7E1BE00753B19 /* NotificationBubleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBubleView.swift; sourceTree = "<group>"; };
 		6B9221522CA27B2C0040C6F1 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA450982CA7D86900CD4BAF /* reel_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_1.mp4; sourceTree = "<group>"; };
 		6BA4509A2CA7D86900CD4BAF /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				6BA450BF2CA7D86900CD4BAF /* ActivityView.swift */,
 				6BA450C02CA7D86900CD4BAF /* RoundedBackgroundView.swift */,
 				6BA450C12CA7D86900CD4BAF /* GridView.swift */,
+				6B90BD3D2CA7E1BE00753B19 /* NotificationBubleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				6BA450CC2CA7D86900CD4BAF /* ActivityListView.swift in Sources */,
 				6BA450E52CA7D86900CD4BAF /* AvatarView.swift in Sources */,
 				6BA450EF2CA7D86900CD4BAF /* ContentView.swift in Sources */,
+				6B90BD3E2CA7E1BE00753B19 /* NotificationBubleView.swift in Sources */,
 				6BA450D82CA7D86900CD4BAF /* CaptionView.swift in Sources */,
 				6BA450EA2CA7D86900CD4BAF /* GridView.swift in Sources */,
 				6BA450D62CA7D86900CD4BAF /* MediaView.swift in Sources */,

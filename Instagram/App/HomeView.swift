@@ -45,18 +45,9 @@ struct HomeView: View {
 						Button {
 							
 						} label: {
-							ZStack {
-								Image(systemName: "bubble")
-									.foregroundStyle(.black)
-								
-								Text("5")
-									.font(.caption.bold())
-									.padding(.all, 4)
-									.background(.red)
-									.foregroundStyle(.white)
-									.clipShape(Circle())
-									.offset(x: 8, y: -8)
-							}
+							Image(systemName: "bubble")
+								.foregroundStyle(.black)
+								.modifier(NotificationBubleView(value: "99"))
 						}
 					}
 				}
