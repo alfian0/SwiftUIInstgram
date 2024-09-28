@@ -31,10 +31,10 @@ struct StoryListView: View {
 						AvatarView(name: datum.user.profileImage)
 							.frame(width: 64, height: 64)
 							.if(!datum.isSeen, transform: { view in
-								view.modifier(AvatarStoryActiveView(isLoading: .constant(false)))
+								view.modifier(RingView(isLoading: .constant(false)))
 							})
 							.if(datum.isMystory) { view in
-								view.modifier(PlusIndicatorView())
+								view.modifier(ComposeView())
 							}
 						
 						Text(datum.user.userName)

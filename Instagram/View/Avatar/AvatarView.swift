@@ -22,9 +22,9 @@ struct AvatarView: View {
 	AvatarView(name: "img_avatar_1")
 		.frame(width: 64, height: 64)
 		.if(true, transform: { view in
-			view.modifier(AvatarStoryActiveView(isLoading: .constant(false)))
+			view.modifier(RingView(isLoading: .constant(false)))
 		})
 		.if(true) { view in
-			view.modifier(PlusIndicatorView())
+			view.modifier(ComposeView())
 		}
 }

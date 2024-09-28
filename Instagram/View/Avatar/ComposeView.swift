@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlusIndicatorView: ViewModifier {
+struct ComposeView: ViewModifier {
 	let systemName: String
 	let alignment: Alignment
 	let size: CGSize
@@ -25,15 +25,19 @@ struct PlusIndicatorView: ViewModifier {
 	func body(content: Content) -> some View {
 		content
 			.overlay(alignment: alignment) {
-				Circle()
-					.foregroundStyle(.blue)
-					.frame(width: size.width, height: size.height)
-					.overlay(Circle().stroke(.white, lineWidth: 2))
-					.overlay {
-						Image(systemName: systemName)
-							.font(.caption.bold())
-							.foregroundStyle(.white)
-					}
+				Button {
+					
+				} label: {
+					Circle()
+						.foregroundStyle(.blue)
+						.frame(width: size.width, height: size.height)
+						.overlay(Circle().stroke(.white, lineWidth: 2))
+						.overlay {
+							Image(systemName: systemName)
+								.font(.caption.bold())
+								.foregroundStyle(.white)
+						}
+				}
 			}
 	}
 }

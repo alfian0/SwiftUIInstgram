@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AvatarStoryActiveView: ViewModifier {
+struct RingView: ViewModifier {
 	@Binding var isLoading: Bool
 	
 	private let gradient = LinearGradient(
