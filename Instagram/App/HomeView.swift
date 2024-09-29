@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+	@Environment(\.dismiss) var dismiss
 	@State private var selectedItem: StoryDataModel?
 	
     var body: some View {
@@ -53,7 +54,16 @@ struct HomeView: View {
 				}
 				.fullScreenCover(item: $selectedItem, content: { item in
 					if let index = mockStoryData.enumerated().filter({ $0.element == item }).map({ $0.offset }).first {
-						StoryView(stories: mockStoryData, currentIndex: index)
+						StoryView(
+							viewModel: StoryViewModel(
+								currentIndex: index,
+								viewModels: mockStoryData
+									.map({ StoryItemViewModel(
+										story: $0,
+										timer: Timer.TimerPublisher(interval: 0.1, runLoop: .main, mode: .common)
+									)}), completion: {
+										dismiss()
+									}))
 					} else {
 						EmptyView()
 					}
